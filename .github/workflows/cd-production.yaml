@@ -20,7 +20,7 @@ jobs:
           path: "./dist"
           name: "build-artifact-deployment"
   deploy-production-job:
-    needs: "build-deployment-job"
+    needs: "build-production-job"
     environment: "production-env"
     permissions:
       pages: write
